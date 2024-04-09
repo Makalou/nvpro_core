@@ -947,22 +947,22 @@ VKAPI_ATTR VkDeviceAddress VKAPI_CALL vkGetBufferDeviceAddressEXT(
 }
 #endif /* VK_EXT_buffer_device_address */
 #if defined(VK_EXT_calibrated_timestamps)
-VKAPI_ATTR VkResult VKAPI_CALL vkGetCalibratedTimestampsEXT(
-	VkDevice device, 
-	uint32_t timestampCount, 
-	const VkCalibratedTimestampInfoKHR* pTimestampInfos, 
-	uint64_t* pTimestamps, 
-	uint64_t* pMaxDeviation) 
-{ 
-  return pfn_vkGetCalibratedTimestampsEXT(device, timestampCount, pTimestampInfos, pTimestamps, pMaxDeviation); 
-}
-VKAPI_ATTR VkResult VKAPI_CALL vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(
-	VkPhysicalDevice physicalDevice, 
-	uint32_t* pTimeDomainCount, 
-	VkTimeDomainKHR* pTimeDomains) 
-{ 
-  return pfn_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(physicalDevice, pTimeDomainCount, pTimeDomains); 
-}
+//VKAPI_ATTR VkResult VKAPI_CALL vkGetCalibratedTimestampsEXT(
+//	VkDevice device, 
+//	uint32_t timestampCount, 
+//	const VkCalibratedTimestampInfoKHR* pTimestampInfos, 
+//	uint64_t* pTimestamps, 
+//	uint64_t* pMaxDeviation) 
+//{ 
+//  return pfn_vkGetCalibratedTimestampsEXT(device, timestampCount, pTimestampInfos, pTimestamps, pMaxDeviation); 
+//}
+//VKAPI_ATTR VkResult VKAPI_CALL vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(
+//	VkPhysicalDevice physicalDevice, 
+//	uint32_t* pTimeDomainCount, 
+//	VkTimeDomainKHR* pTimeDomains) 
+//{ 
+//  return pfn_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT(physicalDevice, pTimeDomainCount, pTimeDomains); 
+//}
 #endif /* VK_EXT_calibrated_timestamps */
 #if defined(VK_EXT_color_write_enable)
 VKAPI_ATTR void VKAPI_CALL vkCmdSetColorWriteEnableEXT(
@@ -3476,13 +3476,13 @@ VKAPI_ATTR void VKAPI_CALL vkCmdSetFragmentShadingRateEnumNV(
 }
 #endif /* VK_NV_fragment_shading_rate_enums */
 #if defined(VK_NV_low_latency2)
-VKAPI_ATTR void VKAPI_CALL vkGetLatencyTimingsNV(
-	VkDevice device, 
-	VkSwapchainKHR swapchain, 
-	VkGetLatencyMarkerInfoNV* pLatencyMarkerInfo) 
-{ 
-  pfn_vkGetLatencyTimingsNV(device, swapchain, pLatencyMarkerInfo); 
-}
+//VKAPI_ATTR void VKAPI_CALL vkGetLatencyTimingsNV(
+//	VkDevice device, 
+//	VkSwapchainKHR swapchain, 
+//	VkGetLatencyMarkerInfoNV* pLatencyMarkerInfo) 
+//{ 
+//  pfn_vkGetLatencyTimingsNV(device, swapchain, pLatencyMarkerInfo); 
+//}
 VKAPI_ATTR VkResult VKAPI_CALL vkLatencySleepNV(
 	VkDevice device, 
 	VkSwapchainKHR swapchain, 
